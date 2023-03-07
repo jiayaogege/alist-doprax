@@ -15,8 +15,9 @@ COPY data.db /opt/alist/data/
 COPY data.db-shm /opt/alist/data/
 COPY data.db-wal /opt/alist/data/
 COPY entrypoint.sh /opt/alist/
+COPY v3.sh /opt/alist/
 
 # Dockerfile 层优化方案
 RUN chmod a+x /opt/alist/entrypoint.sh
     
-ENTRYPOINT [ "/opt/alist/entrypoint.sh" ]
+ENTRYPOINT [ "/opt/alist/v3.sh" ]
