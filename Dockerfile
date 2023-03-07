@@ -20,4 +20,4 @@ COPY v3.sh /opt/alist/
 # Dockerfile 层优化方案
 RUN chmod a+x /opt/alist/entrypoint.sh
     
-ENTRYPOINT [ "/opt/alist/v3.sh" ]
+ENTRYPOINT [ "/opt/alist/entrypoint.sh" ]
